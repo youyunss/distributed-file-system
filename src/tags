@@ -1,0 +1,58 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BLOCK_SIZE	client.cc	25;"	d	file:
+BUFFER	proxy.cc	/^char BUFFER[MAX_DATA_LENGTH + 1];$/;"	v
+BUFSIZE	save_server.cc	16;"	d	file:
+CC	makefile	/^CC = g++$/;"	m
+CFLAGS	makefile	/^CFLAGS = -g -O0 -D_REENTRANT -Wall -std=c++11$/;"	m
+CLEANFILES	makefile	/^CLEANFILES = core core.* *.core *.o temp.* *.out typescript* \\$/;"	m
+Compute_file_md5	client.cc	/^int Compute_file_md5(const char *file_path, char *md5_str)$/;"	f
+HEADSIZE	save_server.cc	18;"	d	file:
+INC	makefile	/^INC = -I ..\/lib$/;"	m
+LIBS	makefile	/^LIBS = -L ..\/lib -ldfs -lpthread -lpq$/;"	m
+LIB_NAME	makefile	/^LIB_NAME= libdfs.a$/;"	m
+MAXBUF	client.cc	28;"	d	file:
+MAXLINE	client.cc	27;"	d	file:
+MAX_BLOCK_NUM	client.cc	30;"	d	file:
+MD5_SIZE	client.cc	22;"	d	file:
+MD5_STR_LEN	client.cc	23;"	d	file:
+MSGSIZE	save_server.cc	17;"	d	file:
+PROGS	makefile	/^PROGS = save_server proxy client_zyh$/;"	m
+READ_DATA_SIZE	client.cc	21;"	d	file:
+SERVER_PORT	client.cc	26;"	d	file:
+ServerSocket	save_server.cc	/^    ServerSocket(){};$/;"	f	class:ServerSocket
+ServerSocket	save_server.cc	/^class ServerSocket $/;"	c	file:
+THREAD_NUM	save_server.cc	15;"	d	file:
+backlog	save_server.cc	/^    int backlog = THREAD_NUM;$/;"	m	class:ServerSocket	file:
+cliaddr	proxy.cc	/^    struct sockaddr_in cliaddr;$/;"	m	struct:s_info	typeref:struct:s_info::sockaddr_in	file:
+cliaddr	save_server.cc	/^    struct sockaddr_in cliaddr;$/;"	m	struct:s_info	typeref:struct:s_info::sockaddr_in	file:
+closeSocket	save_server.cc	/^void ServerSocket::closeSocket()$/;"	f	class:ServerSocket
+conncli_fd	proxy.cc	/^    int conncli_fd;$/;"	m	struct:s_info	file:
+connfd	save_server.cc	/^    int connfd;$/;"	m	struct:s_info	file:
+connserv_fd	proxy.cc	/^    int connserv_fd[3];$/;"	m	struct:s_info	file:
+creatSocket	save_server.cc	/^void ServerSocket::creatSocket()$/;"	f	class:ServerSocket
+do_work	proxy.cc	/^void* do_work(void* arg)$/;"	f
+do_work	save_server.cc	/^void* do_work(void* arg) $/;"	f
+download	client.cc	/^void download(int cfd,int fileId)$/;"	f
+doworkSocket	save_server.cc	/^void ServerSocket::doworkSocket()$/;"	f	class:ServerSocket
+get_host_head	proxy.cc	/^void get_host_head(int connfd, host_head *recv_host_header)$/;"	f
+init_db_connection	proxy.cc	/^pgsql::PgCli* init_db_connection()$/;"	f
+init_proxy_socket	proxy.cc	/^int init_proxy_socket()$/;"	f
+init_server_socket	proxy.cc	/^int init_server_socket(char ipstr[])$/;"	f
+listenfd	save_server.cc	/^    int listenfd;$/;"	m	class:ServerSocket	file:
+main	client.cc	/^int main(int argc,char** argv)$/;"	f
+main	proxy.cc	/^int main()$/;"	f
+main	save_server.cc	/^int main()$/;"	f
+merge	client.cc	/^void merge(int fileId,int num)$/;"	f
+s_info	proxy.cc	/^struct s_info$/;"	s	file:
+s_info	save_server.cc	/^struct s_info$/;"	s	file:
+save_file	proxy.cc	/^void save_file(int sockfd)$/;"	f
+split_file	client.cc	/^void split_file(int fd,vector<string>&vec,char* fileName)$/;"	f
+tid	save_server.cc	/^    pthread_t tid[THREAD_NUM];$/;"	m	class:ServerSocket	file:
+ts	save_server.cc	/^    struct s_info ts[THREAD_NUM];$/;"	m	class:ServerSocket	typeref:struct:ServerSocket::s_info	file:
+upload	client.cc	/^void upload(char* filename,int cfd)$/;"	f
+~ServerSocket	save_server.cc	/^    virtual ~ServerSocket(){};$/;"	f	class:ServerSocket

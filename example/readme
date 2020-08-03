@@ -1,0 +1,43 @@
+安装
+  chmod +x ./install.sh
+  ./install.sh
+
+运行
+  运行服务器
+  bin/server
+  
+  运行代理
+  bin/proxy
+
+  执行下载
+  bin/client download 2 
+
+目录
+.
+├── bin                   # 可执行文件
+│   ├── client
+│   ├── server
+│   └── proxy
+├── install.sh
+├── example
+│   ├── client_example.cc
+│   ├── server_example.cc
+│   ├── test_hash.cc
+│   └── test_psql.cc
+├── lib                   # 静态链接库 & 头文件
+│   ├── libdfs.a
+│   ├── makefile
+│   ├── consistent_hash.h              # 一致性哈希
+│   ├── md5.cc md5.h                   # cal md5 for client 
+│   ├── msg_helper.cc msg_helper.h     # 传输
+│   ├── pg_proxy.cc pg_proxy.h         # pgsql
+│   ├── proxy_helper.cc proxy_helper.g # for proxy 
+│   └── socket_wrap.h socket_wrap.cc   # wrap
+├── readme
+├── files                 # server repo
+│   └── 337807d810f205edd45049eb001fe3a5
+└── src                   # 源码
+    ├── client.cc
+    ├── makefile
+    ├── proxy.cc
+    └── server.cc

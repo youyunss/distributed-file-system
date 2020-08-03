@@ -1,0 +1,151 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Accept	socket_wrap.cc	/^int Accept(int fd, struct sockaddr *sa, socklen_t *salenptr)$/;"	f
+AddNode	consistent_hash.h	/^    void AddNode(int index)$/;"	f	class:ConsistentHash
+BLOCK_SIZE	socket_wrap.h	24;"	d
+Bind	socket_wrap.cc	/^void Bind(int fd, const struct sockaddr *sa, socklen_t salen)$/;"	f
+Block_Data	msg_helper.h	/^}Block_Data;$/;"	t	typeref:struct:__anon4
+Block_Index	msg_helper.h	/^}Block_Index;$/;"	t	typeref:struct:__anon3
+CC	makefile	/^CC = g++$/;"	m
+CFLAGS	makefile	/^CFLAGS = $(INC) -g -O0 -D_REENTRANT -Wall -std=c++11$/;"	m
+CLEANFILES	makefile	/^CLEANFILES = core core.* *.core *.o temp.* *.out typescript* \\$/;"	m
+COM_LEN	pg_proxy.h	9;"	d
+Close	socket_wrap.cc	/^void Close(int fd)$/;"	f
+Connect	socket_wrap.cc	/^void Connect(int fd, const struct sockaddr *sa, socklen_t salen)$/;"	f
+ConsistentHash	consistent_hash.h	/^    ConsistentHash() {$/;"	f	class:ConsistentHash
+ConsistentHash	consistent_hash.h	/^    ConsistentHash(int node_num) : node_num_(node_num)$/;"	f	class:ConsistentHash
+ConsistentHash	consistent_hash.h	/^class ConsistentHash {$/;"	c
+DelDb	pg_proxy.cc	/^int PgCli::DelDb (PGconn* conn_, const char * table, const char *condition)$/;"	f	class:PgCli
+DeleteNode	consistent_hash.h	/^    void DeleteNode(int index)$/;"	f	class:ConsistentHash
+ExitConn	pg_proxy.cc	/^void PgCli::ExitConn(PGconn* conn_)$/;"	f	class:PgCli
+F	md5.h	12;"	d
+FF	md5.h	18;"	d
+G	md5.h	13;"	d
+GG	md5.h	24;"	d
+GetServerIndex	consistent_hash.h	/^    size_t GetServerIndex(const string& key)$/;"	f	class:ConsistentHash
+Get_file_sum	proxy_helper.cc	/^    int Get_file_sum(PGconn* conn_pg, pgsql::PgCli* pg_client)$/;"	f	namespace:proxy_h
+H	md5.h	14;"	d
+HH	md5.h	30;"	d
+HOST_HEAD_LENGTH	msg_helper.h	/^const int HOST_HEAD_LENGTH = sizeof(host_head);$/;"	v
+I	md5.h	15;"	d
+II	md5.h	36;"	d
+INC	makefile	/^INC = -I ..\/lib$/;"	m
+Init	consistent_hash.h	/^    void Init() $/;"	f	class:ConsistentHash
+Init	pg_proxy.cc	/^PGconn* PgCli::Init()$/;"	f	class:PgCli
+InsertDb	pg_proxy.cc	/^int PgCli::InsertDb (PGconn* conn_, const char * table, const char *content)$/;"	f	class:PgCli
+Insert_block_idmd5name	proxy_helper.cc	/^    int Insert_block_idmd5name(PGconn* conn_pg, uint blockid, char blockmd5[33], char filename[33], pgsql::PgCli* pg_client)$/;"	f	namespace:proxy_h
+Insert_file_idmd5	proxy_helper.cc	/^    int Insert_file_idmd5(PGconn* conn_pg, uint fileid, char filemd5[33], pgsql::PgCli* pg_client)$/;"	f	namespace:proxy_h
+LIBS	makefile	/^LIBS = -L ..\/lib -ldfs \\$/;"	m
+LIB_NAME	makefile	/^LIB_NAME= libdfs.a$/;"	m
+Listen	socket_wrap.cc	/^void Listen(int fd, int backlog)$/;"	f
+MAXLINE	socket_wrap.h	22;"	d
+MAX_CONNECTION	socket_wrap.h	25;"	d
+MAX_DATA_LENGTH	msg_helper.h	/^const int MAX_DATA_LENGTH = MAX_MSG_LENGTH + MSG_HEAD_LENGTH;$/;"	v
+MAX_MSG_LENGTH	msg_helper.h	/^const int MAX_MSG_LENGTH = 1 * 1024 * 1024;                          \/\/1MB$/;"	v
+MD5Decode	md5.cc	/^void MD5Decode(unsigned int *output, unsigned char *input, unsigned int len)$/;"	f
+MD5Encode	md5.cc	/^void MD5Encode(unsigned char *output,unsigned int *input,unsigned int len)$/;"	f
+MD5Final	md5.cc	/^void MD5Final(MD5_CTX *context, unsigned char digest[16])$/;"	f
+MD5Init	md5.cc	/^void MD5Init(MD5_CTX *context)$/;"	f
+MD5Transform	md5.cc	/^void MD5Transform(unsigned int state[4], unsigned char block[64])$/;"	f
+MD5Update	md5.cc	/^void MD5Update(MD5_CTX *context, unsigned char *input, unsigned int inputlen)$/;"	f
+MD5_CTX	md5.h	/^} MD5_CTX;$/;"	t	typeref:struct:__anon5
+MD5_H	md5.h	2;"	d
+MSG_HEAD_LENGTH	msg_helper.h	/^const int MSG_HEAD_LENGTH = sizeof(msg_head_t);$/;"	v
+MsgHelper	msg_helper.h	/^class MsgHelper$/;"	c
+MsgType	msg_helper.h	/^typedef enum MsgType$/;"	g
+MsgType	msg_helper.h	/^}MsgType; $/;"	t	typeref:enum:MsgType
+NODE_NUM	consistent_hash.h	8;"	d
+PADDING	md5.cc	/^unsigned char PADDING[] =$/;"	v
+PG_CLIENT_H_	pg_proxy.h	2;"	d
+PROGS	makefile	/^PROGS = socket_wrap.o pg_proxy.o msg_helper.o proxy_helper.o md5.o$/;"	m
+PROXY_HELPER_H	proxy_helper.h	2;"	d
+PROXY_PORT	msg_helper.h	23;"	d
+PgCli	pg_proxy.cc	/^PgCli::PgCli(SqlPara* para):para_(para),res_(NULL)$/;"	f	class:PgCli
+PgCli	pg_proxy.h	/^    class PgCli$/;"	c	namespace:pgsql
+QueryCount	pg_proxy.cc	/^int PgCli::QueryCount (PGconn* conn_, const char * table)$/;"	f	class:PgCli
+QueryDb	pg_proxy.cc	/^int PgCli::QueryDb (PGconn* conn_, const char * table, const char *condition)$/;"	f	class:PgCli
+Query_block_md5	proxy_helper.cc	/^    bool Query_block_md5(PGconn* conn_pg, char block_md5[33], pgsql::PgCli* pg_client)$/;"	f	namespace:proxy_h
+Query_block_md5_by_id	proxy_helper.cc	/^    bool Query_block_md5_by_id(PGconn* conn_pg, int block_id, pgsql::PgCli* pg_client, char* block_md5)$/;"	f	namespace:proxy_h
+Query_block_server	proxy_helper.cc	/^    int Query_block_server(int block_id)$/;"	f	namespace:proxy_h
+Query_file_block	proxy_helper.cc	/^    uint Query_file_block(PGconn* conn_pg, int file_id, pgsql::PgCli* pg_client, std::vector<Block_Index> &query_res)$/;"	f	namespace:proxy_h
+Query_file_md5	proxy_helper.cc	/^    int Query_file_md5(PGconn* conn_pg, char file_md5[33], pgsql::PgCli* pg_client)$/;"	f	namespace:proxy_h
+ROTATE_LEFT	md5.h	16;"	d
+Read	socket_wrap.cc	/^ssize_t Read(int fd, void *ptr, size_t nbytes)$/;"	f
+Read_Len	socket_wrap.cc	/^uint Read_Len(int connfd,  char* recv_buf, uint len)$/;"	f
+Readline	socket_wrap.cc	/^ssize_t Readline(int fd, void *vptr, ssize_t maxlen)$/;"	f
+Readn	socket_wrap.cc	/^ssize_t Readn(int fd, void *vptr, size_t n)$/;"	f
+SERVER_PORT	msg_helper.h	22;"	d
+SERVER_PORT	socket_wrap.h	21;"	d
+ShowResults	pg_proxy.cc	/^void PgCli::ShowResults()$/;"	f	class:PgCli
+Socket	socket_wrap.cc	/^int Socket(int family, int type, int protocol)$/;"	f
+SqlPara	pg_proxy.h	/^    struct SqlPara $/;"	s	namespace:pgsql
+TB_BLOCK	pg_proxy.h	12;"	d
+TB_FILE	pg_proxy.h	14;"	d
+TB_FILE_BLOCK	pg_proxy.h	11;"	d
+TB_SERVER	pg_proxy.h	13;"	d
+Write	socket_wrap.cc	/^ssize_t Write(int fd, const void *ptr, size_t nbytes)$/;"	f
+Writen	socket_wrap.cc	/^ssize_t Writen(int fd, const void *vptr, size_t n)$/;"	f
+_MSG_HELPER_H_	msg_helper.h	2;"	d
+__WRAP_H_	socket_wrap.h	2;"	d
+ask_for_block	msg_helper.h	/^	ask_for_block=4,$/;"	e	enum:MsgType
+ask_for_block_md5	msg_helper.h	/^	ask_for_block_md5=2,$/;"	e	enum:MsgType
+ask_for_flie	msg_helper.h	/^	ask_for_flie=6,$/;"	e	enum:MsgType
+block_c2p	msg_helper.h	/^	block_c2p=5,$/;"	e	enum:MsgType
+block_md5	msg_helper.h	/^	block_md5=3,$/;"	e	enum:MsgType
+block_name	msg_helper.h	/^	block_name=7,$/;"	e	enum:MsgType
+block_p2s	msg_helper.h	/^	block_p2s=8,$/;"	e	enum:MsgType
+blockdata	msg_helper.h	/^	char blockdata[MAX_MSG_LENGTH];  \/\/blockdata是分块的具体数据$/;"	m	struct:__anon4
+blockid	msg_helper.h	/^	unsigned blockid;       \/\/分块数据序号 $/;"	m	struct:__anon1
+blockid	msg_helper.h	/^	unsigned blockid;      \/\/分块数据序号 $/;"	m	struct:__anon2
+blockid	msg_helper.h	/^	unsigned blockid;$/;"	m	struct:__anon3
+blockmd5	msg_helper.h	/^	char     blockmd5[32];  \/\/分块数据MD5$/;"	m	struct:__anon1
+blockmd5	msg_helper.h	/^	char     blockmd5[32];$/;"	m	struct:__anon3
+blockmd5	msg_helper.h	/^	char     blockmd5[36]; \/\/分块数据MD5$/;"	m	struct:__anon2
+buffer	md5.h	/^	unsigned char buffer[64];   $/;"	m	struct:__anon5
+check_msg	msg_helper.cc	/^int MsgHelper::check_msg(const char *data, msg_head_t *head, unsigned check_length)$/;"	f	class:MsgHelper
+conn_info_	pg_proxy.h	/^        string conn_info_;$/;"	m	class:pgsql::PgCli
+count	md5.h	/^	unsigned int count[2];$/;"	m	struct:__anon5
+file_md5	msg_helper.h	/^	file_md5=0,$/;"	e	enum:MsgType
+file_success	msg_helper.h	/^	file_success=1,$/;"	e	enum:MsgType
+fileid	msg_helper.h	/^	unsigned fileid;        \/\/文件id$/;"	m	struct:__anon1
+fileid	msg_helper.h	/^	unsigned fileid;       \/\/文件id$/;"	m	struct:__anon2
+filemd5	msg_helper.h	/^	char     filemd5[32];   \/\/大文件MD5$/;"	m	struct:__anon1
+filemd5	msg_helper.h	/^	char     filemd5[36];  \/\/大文件MD5$/;"	m	struct:__anon2
+filename	msg_helper.h	/^	char     filename[32];  \/\/文件名$/;"	m	struct:__anon1
+filename	msg_helper.h	/^	char     filename[32]; \/\/文件名$/;"	m	struct:__anon2
+get_msg	msg_helper.cc	/^int MsgHelper::get_msg(const std::string& msg, void *recvmsgsource, int recvmsgsource_length)$/;"	f	class:MsgHelper
+get_msg_head	msg_helper.cc	/^int MsgHelper::get_msg_head(const msg_head_t *recvhead, host_head *head)$/;"	f	class:MsgHelper
+host_head	msg_helper.h	/^}host_head;$/;"	t	typeref:struct:__anon2
+length	msg_helper.h	/^	unsigned length;        \/\/信息长度，数据包长度data_length=length+MSG_HEAD_LENGTH$/;"	m	struct:__anon1
+length	msg_helper.h	/^	unsigned length;       \/\/信息长度$/;"	m	struct:__anon2
+msg_head_t	msg_helper.h	/^}msg_head_t;$/;"	t	typeref:struct:__anon1
+msgtype	msg_helper.h	/^	MsgType  msgtype;      \/\/消息类型$/;"	m	struct:__anon2
+msgtype	msg_helper.h	/^	unsigned msgtype;       \/\/消息类型$/;"	m	struct:__anon1
+my_read	socket_wrap.cc	/^static ssize_t my_read(int fd, char *ptr)$/;"	f	file:
+no_block	msg_helper.h	/^	no_block=9$/;"	e	enum:MsgType
+node_num_	consistent_hash.h	/^    int node_num_ = 3;$/;"	m	class:ConsistentHash
+pack_msg	msg_helper.cc	/^int MsgHelper::pack_msg(char* data, int data_capacity, const msg_head_t *head, const std::string& sendmsg)$/;"	f	class:MsgHelper
+para_	pg_proxy.h	/^        SqlPara* para_;$/;"	m	class:pgsql::PgCli
+perr_exit	socket_wrap.cc	/^void perr_exit(const char *s)$/;"	f
+pgsql	pg_proxy.h	/^namespace pgsql$/;"	n
+proxy_h	proxy_helper.cc	/^namespace proxy_h$/;"	n	file:
+proxy_h	proxy_helper.h	/^namespace proxy_h$/;"	n
+res_	pg_proxy.h	/^        PGresult* res_;$/;"	m	class:pgsql::PgCli
+server_nodes_	consistent_hash.h	/^    map<size_t, size_t> server_nodes_;$/;"	m	class:ConsistentHash
+set_msg	msg_helper.cc	/^int MsgHelper::set_msg(std::string& msg, const void *sendmsgsource, int sendmsgsource_length)$/;"	f	class:MsgHelper
+set_msg_head	msg_helper.cc	/^int MsgHelper::set_msg_head(msg_head_t *sendhead, const host_head *head)$/;"	f	class:MsgHelper
+sql_connect_timeout_	pg_proxy.h	/^        string sql_connect_timeout_;\/\/连接超时$/;"	m	struct:pgsql::SqlPara
+sql_dbname_	pg_proxy.h	/^        string sql_dbname_;\/\/数据库名$/;"	m	struct:pgsql::SqlPara
+sql_ip_	pg_proxy.h	/^        string sql_ip_;\/\/ip$/;"	m	struct:pgsql::SqlPara
+sql_port_	pg_proxy.h	/^        string sql_port_;\/\/端口，默认5432$/;"	m	struct:pgsql::SqlPara
+sql_psswd_	pg_proxy.h	/^        string sql_psswd_;\/\/密码$/;"	m	struct:pgsql::SqlPara
+sql_user_	pg_proxy.h	/^        string sql_user_;\/\/用户名$/;"	m	struct:pgsql::SqlPara
+state	md5.h	/^	unsigned int state[4];$/;"	m	struct:__anon5
+unpack_msg	msg_helper.cc	/^int MsgHelper::unpack_msg(const char* data, int unpack_length, std::string& recvmsg)$/;"	f	class:MsgHelper
+vnode_num_	consistent_hash.h	/^    int vnode_num_ = 100;$/;"	m	class:ConsistentHash
+~ConsistentHash	consistent_hash.h	/^    ~ConsistentHash() $/;"	f	class:ConsistentHash
+~PgCli	pg_proxy.cc	/^PgCli::~PgCli()$/;"	f	class:PgCli
